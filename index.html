@@ -684,7 +684,23 @@
             <p>
               Fill out the form below and we'll get back to you within 2 hours.
             </p>
-            <form id="queryForm">
+            <form
+              id="queryForm"
+              action="https://formsubmit.co/info@cubiik.in"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New website query from Cubiik"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="box" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://cubiik.in/#contact"
+              />
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Full Name</label
@@ -862,15 +878,16 @@
         navbar.style.background =
           window.scrollY > 50 ? "var(--navbar-bg-scroll)" : "var(--navbar-bg)";
       });
-      document
-        .getElementById("queryForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Thank you for your query! We will get back to you within 2 hours."
-          );
-          this.reset();
+      const form = document.getElementById("queryForm");
+      if (form) {
+        form.addEventListener("submit", function () {
+          const submitBtn = this.querySelector(".form-submit");
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+          }
         });
+      }
       document.querySelectorAll(".product-btn").forEach((btn) => {
         btn.addEventListener("click", function () {
           const productName =
