@@ -1,120 +1,160 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cubiik | Premium 3D Printed Products</title>
+    <title>Cubiik | Custom 3D Printed Gifts & Home Decor</title>
+    <meta
+      name="description"
+      content="Discover unique custom 3D printed gifts, home decor, toys, and personalized products. Perfect for gifting, celebrations & special occasions. Made with love in India."
+    />
+
+    <!-- Google Analytics - Replace GA_MEASUREMENT_ID with your actual ID -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_MEASUREMENT_ID");
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+      <span
+        >🎄 Christmas Special: Free Gift Wrapping on all orders!
+    </div>
+
     <nav class="navbar">
       <div class="container">
-        <a href="#" class="logo"
-          ><div class="logo-cube">◇</div>
-          cubiik</a
-        >
+        <a href="#" class="logo">
+          <svg
+            class="logo-icon"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="4"
+              y="4"
+              width="32"
+              height="32"
+              rx="6"
+              fill="url(#logo-gradient)"
+            />
+            <path
+              d="M20 10L28 15V25L20 30L12 25V15L20 10Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 10V30M12 15L28 25M28 15L12 25"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-opacity="0.6"
+            />
+            <defs>
+              <linearGradient
+                id="logo-gradient"
+                x1="4"
+                y1="4"
+                x2="36"
+                y2="36"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#d4a574" />
+                <stop offset="1" stop-color="#c4544a" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">cubiik</span>
+        </a>
         <ul class="nav-links">
+          <li><a href="#categories">Shop</a></li>
           <li><a href="#products">Products</a></li>
-          <li><a href="#materials">Materials</a></li>
           <li><a href="#custom">Custom Orders</a></li>
+          <li><a href="#gifting">Gifting</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-actions">
-          <button
-            class="theme-toggle"
-            id="themeToggle"
-            aria-label="Toggle theme"
+          <a
+            href="https://wa.me/+918850410234?text=Hi! I want to place an order"
+            class="nav-cta"
           >
-            <svg
-              class="sun-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <circle cx="12" cy="12" r="5" />
-              <line x1="12" y1="1" x2="12" y2="3" />
-              <line x1="12" y1="21" x2="12" y2="23" />
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-              <line x1="1" y1="12" x2="3" y2="12" />
-              <line x1="21" y1="12" x2="23" y2="12" />
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
             </svg>
-            <svg
-              class="moon-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-            </svg>
-          </button>
-          <a href="#contact" class="nav-cta">Get a Quote</a>
+            Order Now
+          </a>
         </div>
-        <button class="mobile-menu-btn" aria-label="Menu">
+        <button
+          class="mobile-menu-btn"
+          aria-label="Menu"
+          onclick="toggleMobileMenu()"
+        >
           <span></span><span></span><span></span>
         </button>
       </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="#categories" onclick="closeMobileMenu()">Shop</a></li>
+          <li><a href="#products" onclick="closeMobileMenu()">Products</a></li>
+          <li>
+            <a href="#custom" onclick="closeMobileMenu()">Custom Orders</a>
+          </li>
+          <li><a href="#gifting" onclick="closeMobileMenu()">Gifting</a></li>
+          <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-grid"></div>
+      <div class="hero-decoration hero-dec-1"></div>
+      <div class="hero-decoration hero-dec-2"></div>
       <div class="container">
         <div class="hero-content">
-          <span class="section-label">Premium 3D Printing</span>
-          <h1>Ideas Into<br /><span class="gradient-text">Reality.</span></h1>
+          <!-- <span class="hero-tag">✨ Handcrafted with Love</span> -->
+          <h1>
+            Unique Gifts That<br /><span class="highlight"
+              >Tell Your Story</span
+            >
+          </h1>
           <p>
-            Transform your imagination into precision-crafted 3D printed
-            products. From custom toys to stunning décor pieces, we bring your
-            visions to life with industry-grade materials.
+            Discover beautifully crafted 3D printed products — from personalized
+            gifts to stunning home decor. Perfect for birthdays, anniversaries,
+            housewarmings & every special moment.
           </p>
-          <div class="hero-badges">
-            <div class="hero-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12,6 12,12 16,14" /></svg
-              ><span>24-Hour Delivery</span>
+          <div class="hero-features">
+            <div class="hero-feature">
+              <span class="feature-icon">🎨</span>
+              <span>Customizable</span>
             </div>
-            <div class="hero-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg
-              ><span>Premium Quality</span>
-            </div>
-            <div class="hero-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                <circle cx="12" cy="10" r="3" /></svg
-              ><span>Made in Indore</span>
+            <div class="hero-feature">
+              <span class="feature-icon">🎁</span>
+              <span>Gift Wrapped</span>
             </div>
           </div>
           <div class="hero-buttons">
-            <a href="#products" class="btn-primary"
-              >Explore Products
+            <a href="#products" class="btn-primary">
+              Shop Now
               <svg
                 width="18"
                 height="18"
@@ -123,91 +163,363 @@
                 stroke="currentColor"
                 stroke-width="2"
               >
-                <path d="M5 12h14M12 5l7 7-7 7" /></svg
-            ></a>
-            <a href="#custom" class="btn-secondary">Custom Design</a>
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#custom" class="btn-secondary">Create Custom Gift</a>
           </div>
         </div>
         <div class="hero-visual">
-          <div class="hero-3d-container">
-            <div class="hero-cube">
-              <div class="cube-face front"></div>
-              <div class="cube-face back"></div>
-              <div class="cube-face right"></div>
-              <div class="cube-face left"></div>
-              <div class="cube-face top"></div>
-              <div class="cube-face bottom"></div>
+          <div class="hero-image-container">
+            <img
+              src="https://picsum.photos/seed/cubiik-hero/600/700"
+              alt="Beautiful 3D Printed Gifts"
+              class="hero-img"
+            />
+            <div class="floating-card fc-1">
+              <span class="fc-emoji">⭐</span>
+              <span class="fc-text">500+ Happy Customers</span>
             </div>
-            <div class="floating-element fe-1">
-              <span>Material</span><strong>PLA Premium</strong>
-            </div>
-            <div class="floating-element fe-2">
-              <span>Resolution</span><strong>0.1mm Layer</strong>
-            </div>
-            <div class="floating-element fe-3">
-              <span>Delivery</span><strong>Same Day</strong>
+            <div class="floating-card fc-2">
+              <span class="fc-emoji">🎄</span>
+              <span class="fc-text">Christmas Ready!</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stats-bar">
+    <!-- Trust Bar -->
+    <section class="trust-bar">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <h3>500+</h3>
-            <p>Products Delivered</p>
+        <div class="trust-items">
+          <div class="trust-item">
+            <span class="trust-number">500+</span>
+            <span class="trust-label">Products Delivered</span>
           </div>
-          <div class="stat-item">
-            <h3>24hrs</h3>
-            <p>Delivery Time</p>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-number">100%</span>
+            <span class="trust-label">Customizable</span>
           </div>
-          <div class="stat-item">
-            <h3>100%</h3>
-            <p>Quality Assured</p>
-          </div>
-          <div class="stat-item">
-            <h3>50+</h3>
-            <p>Custom Designs</p>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <span class="trust-number">Made in</span>
+            <span class="trust-label">🇮🇳 India</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Categories Section -->
+    <section id="categories" class="categories section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Shop by Category</span>
+          <h2 class="section-title">Find the Perfect Gift</h2>
+          <p class="section-desc">
+            Browse our curated collections for every occasion and space
+          </p>
+        </div>
+        <div class="categories-grid">
+          <a href="#products" class="category-card" data-category="christmas">
+            <div class="category-icon">🎄</div>
+            <h3>Christmas Special</h3>
+            <p>Festive decor, ornaments & holiday gifts</p>
+            <span class="category-badge">Season's Best</span>
+          </a>
+          <a href="#products" class="category-card" data-category="home">
+            <div class="category-icon">🏠</div>
+            <h3>Home Interior</h3>
+            <p>Vases, sculptures & decorative pieces</p>
+          </a>
+          <a href="#products" class="category-card" data-category="toys">
+            <div class="category-icon">🧸</div>
+            <h3>Toys & Games</h3>
+            <p>Fun toys, puzzles & collectibles</p>
+          </a>
+          <a
+            href="#products"
+            class="category-card"
+            data-category="personalized"
+          >
+            <div class="category-icon">💝</div>
+            <h3>Personalized Gifts</h3>
+            <p>Name plates, photo frames & more</p>
+          </a>
+          <a href="#products" class="category-card" data-category="office">
+            <div class="category-icon">💼</div>
+            <h3>Office & Desk</h3>
+            <p>Organizers, pen stands & accessories</p>
+          </a>
+          <a href="#products" class="category-card" data-category="spiritual">
+            <div class="category-icon">🕉️</div>
+            <h3>Spiritual & Religious</h3>
+            <p>Idols, temple decor & religious items</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
     <section id="products" class="products section">
       <div class="container">
-        <div class="products-header">
-          <div>
-            <span class="section-label">Our Collection</span>
-            <h2 class="section-title">
-              Featured <span class="gradient-text">Products</span>
-            </h2>
-            <p>
-              Explore our range of precision-crafted 3D printed products, from
-              playful toys to elegant home décor.
+        <div class="section-header">
+          <span class="section-tag">Our Collection</span>
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-desc">
+            Handpicked favorites from our most loved creations
             </p>
           </div>
+
+        <!-- Product Filter Tabs -->
+        <div class="product-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Products
+          </button>
+          <button class="filter-btn" data-filter="christmas">
+            🎄 Christmas
+          </button>
+          <button class="filter-btn" data-filter="home">🏠 Home Decor</button>
+          <button class="filter-btn" data-filter="toys">🧸 Toys</button>
+          <button class="filter-btn" data-filter="personalized">
+            💝 Gifts
+          </button>
         </div>
-        <div class="products-grid">
-          <div class="product-card">
-            <div class="product-badge">Bestseller</div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- Christmas Products -->
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-hot">🔥 Hot</div>
             <div class="product-image">
               <img
-                src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=600&h=450&fit=crop"
+                src="https://picsum.photos/seed/christmas-ornament/400/400"
+                alt="Christmas Tree Ornament"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Tree Ornament Set')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Tree Ornament Set</h3>
+              <p>Beautiful 3D printed ornaments in gold, silver & red</p>
+              <div class="product-footer">
+                <div class="product-price">₹399 <span>Set of 6</span></div>
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Tree Ornament Set')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-new">New</div>
+            <div class="product-image">
+              <img
+                src="https://picsum.photos/seed/snowflake-decor/400/400"
+                alt="Snowflake Decorations"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Snowflake Decoration Pack')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Snowflake Decoration Pack</h3>
+              <p>Elegant snowflake designs for windows & trees</p>
+              <div class="product-footer">
+                <div class="product-price">₹299 <span>Pack of 8</span></div>
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Snowflake Decoration Pack')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Home Decor Products -->
+          <div class="product-card" data-category="home">
+            <div class="product-badge badge-bestseller">Bestseller</div>
+            <div class="product-image">
+              <img
+                src="https://picsum.photos/seed/geometric-vase/400/400"
+                alt="Modern Geometric Vase"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Modern Geometric Vase')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Home Interior</span>
+              <h3>Modern Geometric Vase</h3>
+              <p>Stunning twisted vase for contemporary interiors</p>
+              <div class="product-footer">
+                <div class="product-price">₹599 <span>onwards</span></div>
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Modern Geometric Vase')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="home">
+            <div class="product-image">
+              <img
+                src="https://picsum.photos/seed/abstract-art/400/400"
+                alt="Abstract Sculpture"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Abstract Art Sculpture')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Home Interior</span>
+              <h3>Abstract Art Sculpture</h3>
+              <p>Eye-catching centerpiece for living rooms</p>
+              <div class="product-footer">
+                <div class="product-price">₹799 <span>onwards</span></div>
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Abstract Art Sculpture')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="home">
+            <div class="product-image">
+              <img
+                src="https://picsum.photos/seed/wall-art/400/400"
+                alt="Wall Art Panel"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('3D Wall Art Panel')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Home Interior</span>
+              <h3>3D Wall Art Panel</h3>
+              <p>Geometric patterns that add depth to walls</p>
+              <div class="product-footer">
+                <div class="product-price">₹999 <span>onwards</span></div>
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('3D Wall Art Panel')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toys Products -->
+          <div class="product-card" data-category="toys">
+            <div class="product-badge badge-bestseller">Bestseller</div>
+            <div class="product-image">
+              <img
+                src="https://picsum.photos/seed/toy-car/400/400"
                 alt="Hot Wheels Style Car"
               />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Hot Wheels Style Car Collection')"
+                >
+                  Quick Order
+                </button>
+              </div>
             </div>
             <div class="product-info">
               <span class="product-category">Kids Toys</span>
               <h3>Hot Wheels Style Car</h3>
-              <p>
-                Detailed miniature race cars with smooth wheels and vibrant
-                finishes.
-              </p>
+              <p>Detailed miniature race cars for collectors</p>
               <div class="product-footer">
                 <div class="product-price">₹299 <span>onwards</span></div>
-                <button class="product-btn">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Hot Wheels Style Car Collection')"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -222,54 +534,33 @@
               </div>
             </div>
           </div>
-          <div class="product-card">
+
+          <div class="product-card" data-category="toys">
+            <div class="product-badge badge-new">New</div>
             <div class="product-image">
               <img
-                src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=600&h=450&fit=crop"
-                alt="Modern Geometric Vase"
-              />
-            </div>
-            <div class="product-info">
-              <span class="product-category">Home Décor</span>
-              <h3>Modern Geometric Vase</h3>
-              <p>
-                Stunning twisted vase design perfect for contemporary interiors.
-              </p>
-              <div class="product-footer">
-                <div class="product-price">₹599 <span>onwards</span></div>
-                <button class="product-btn">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-badge">New</div>
-            <div class="product-image">
-              <img
-                src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&h=450&fit=crop"
+                src="https://picsum.photos/seed/dinosaur-toy/400/400"
                 alt="Dinosaur Collection"
               />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Articulated Dinosaur Collection')"
+                >
+                  Quick Order
+                </button>
+              </div>
             </div>
             <div class="product-info">
               <span class="product-category">Kids Toys</span>
               <h3>Dinosaur Collection</h3>
-              <p>
-                Articulated dinosaur figures with movable joints and realistic
-                details.
-              </p>
+              <p>Articulated figures with movable joints</p>
               <div class="product-footer">
                 <div class="product-price">₹449 <span>onwards</span></div>
-                <button class="product-btn">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Articulated Dinosaur Collection')"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -284,344 +575,441 @@
               </div>
             </div>
           </div>
-          <div class="product-card">
+
+          <div class="product-card" data-category="toys">
             <div class="product-image">
               <img
-                src="https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=600&h=450&fit=crop"
-                alt="Abstract Sculpture"
+                src="https://picsum.photos/seed/building-blocks/400/400"
+                alt="Building Blocks"
               />
-            </div>
-            <div class="product-info">
-              <span class="product-category">Home Décor</span>
-              <h3>Abstract Sculpture</h3>
-              <p>
-                Eye-catching abstract art pieces that elevate any room's
-                aesthetic.
-              </p>
-              <div class="product-footer">
-                <div class="product-price">₹799 <span>onwards</span></div>
-                <button class="product-btn">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Building Blocks Set')"
+                >
+                  Quick Order
                 </button>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=450&fit=crop"
-                alt="Building Blocks Set"
-              />
-            </div>
+        </div>
+      </div>
             <div class="product-info">
               <span class="product-category">Kids Toys</span>
               <h3>Building Blocks Set</h3>
-              <p>
-                Interlocking blocks for creative play and learning. Safe and
-                durable.
-              </p>
+              <p>Safe, durable blocks for creative play</p>
               <div class="product-footer">
                 <div class="product-price">₹349 <span>onwards</span></div>
-                <button class="product-btn">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Building Blocks Set')"
+                >
                   <svg
                     width="20"
                     height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
             </div>
           </div>
-          <div class="product-card">
-            <div class="product-badge">Popular</div>
+
+          <!-- Personalized Gifts -->
+          <div class="product-card" data-category="personalized">
+            <div class="product-badge badge-hot">🔥 Popular</div>
             <div class="product-image">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=450&fit=crop"
-                alt="Desk Organizer Set"
+                src="https://picsum.photos/seed/name-plate/400/400"
+                alt="Custom Name Plate"
               />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Custom Name Plate')"
+                >
+                  Quick Order
+                </button>
+              </div>
             </div>
             <div class="product-info">
-              <span class="product-category">Home Décor</span>
-              <h3>Desk Organizer Set</h3>
-              <p>
-                Minimalist desk accessories for a clean and organized workspace.
-              </p>
+              <span class="product-category">Personalized Gifts</span>
+              <h3>Custom Name Plate</h3>
+              <p>Personalized door signs for homes & offices</p>
               <div class="product-footer">
                 <div class="product-price">₹499 <span>onwards</span></div>
-                <button class="product-btn">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Custom Name Plate')"
+                >
                   <svg
                     width="20"
                     height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
             </div>
           </div>
-        </div>
+
+          <div class="product-card" data-category="personalized">
+            <div class="product-image">
+              <img
+                src="https://picsum.photos/seed/photo-frame/400/400"
+                alt="Photo Frame"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('3D Photo Frame')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Personalized Gifts</span>
+              <h3>3D Photo Frame</h3>
+              <p>Unique frames to showcase precious memories</p>
+              <div class="product-footer">
+                <div class="product-price">₹399 <span>onwards</span></div>
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('3D Photo Frame')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+              </div>
+
+        <div class="view-all-container">
+          <a
+            href="https://wa.me/+918850410234?text=Hi! I'd like to see more products"
+            class="btn-secondary"
+          >
+            View All Products
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+            </div>
       </div>
     </section>
 
-    <section id="materials" class="materials section">
+    <!-- Gifting Section -->
+    <section id="gifting" class="gifting section">
       <div class="container">
-        <div class="materials-content">
-          <div class="materials-text">
-            <span class="section-label">Quality Materials</span>
+        <div class="gifting-content">
+          <div class="gifting-text">
+            <span class="section-tag">Perfect Gifting</span>
             <h2 class="section-title">
-              Engineered for <span class="gradient-text">Excellence</span>
+              Gifts They'll <span class="highlight">Actually Love</span>
             </h2>
             <p>
-              We use only industry-grade 3D printing materials to ensure every
-              product meets the highest standards of quality, durability, and
-              safety.
+              Looking for a unique, thoughtful gift? Our custom 3D printed
+              products are perfect for every occasion — from birthdays to
+              anniversaries, housewarmings to festivals.
             </p>
-            <div class="trust-badges">
-              <div class="trust-badge">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                  <polyline points="22,4 12,14.01 9,11.01" /></svg
-                ><span>Non-Toxic</span>
+
+            <div class="occasion-grid">
+              <div class="occasion-item">
+                <span class="occasion-emoji">🎂</span>
+                <span>Birthdays</span>
               </div>
-              <div class="trust-badge">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                  <polyline points="22,4 12,14.01 9,11.01" /></svg
-                ><span>Child-Safe</span>
+              <div class="occasion-item">
+                <span class="occasion-emoji">💍</span>
+                <span>Anniversaries</span>
+            </div>
+              <div class="occasion-item">
+                <span class="occasion-emoji">🏠</span>
+                <span>Housewarming</span>
               </div>
-              <div class="trust-badge">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                  <polyline points="22,4 12,14.01 9,11.01" /></svg
-                ><span>Eco-Friendly</span>
+              <div class="occasion-item">
+                <span class="occasion-emoji">🎄</span>
+                <span>Christmas</span>
+            </div>
+              <div class="occasion-item">
+                <span class="occasion-emoji">🪔</span>
+                <span>Diwali</span>
+              </div>
+              <div class="occasion-item">
+                <span class="occasion-emoji">💝</span>
+                <span>Valentine's</span>
               </div>
             </div>
+
+            <div class="gifting-features">
+              <div class="gift-feature">
+                <div class="gift-feature-icon">🎁</div>
+                <div>
+                  <h4>Free Gift Wrapping</h4>
+                  <p>Beautiful packaging included with every order</p>
+                </div>
+              </div>
+              <div class="gift-feature">
+                <div class="gift-feature-icon">📝</div>
+                <div>
+                  <h4>Personal Message</h4>
+                  <p>Add a heartfelt note with your gift</p>
+                </div>
+              </div>
+              <div class="gift-feature">
+                <div class="gift-feature-icon">🚚</div>
+                <div>
+                  <h4>Direct Delivery</h4>
+                  <p>Ship directly to your loved ones</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn-primary">
+              Order Gift Now
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
           </div>
-          <div class="materials-grid">
-            <div class="material-card">
-              <div class="material-icon">🌿</div>
-              <h3>PLA (Polylactic Acid)</h3>
-              <p>
-                Eco-friendly, biodegradable material made from renewable
-                resources. Perfect for toys and decorative items.
-              </p>
-              <div class="material-specs">
-                <span class="material-spec">Biodegradable</span
-                ><span class="material-spec">Food-Safe</span
-                ><span class="material-spec">Odorless</span>
-              </div>
-            </div>
-            <div class="material-card">
-              <div class="material-icon">💪</div>
-              <h3>ABS (Acrylonitrile Butadiene)</h3>
-              <p>
-                Industrial-strength thermoplastic known for durability and
-                impact resistance. Ideal for functional parts.
-              </p>
-              <div class="material-specs">
-                <span class="material-spec">High Strength</span
-                ><span class="material-spec">Heat Resistant</span
-                ><span class="material-spec">Durable</span>
-              </div>
-            </div>
-            <div class="material-card">
-              <div class="material-icon">✨</div>
-              <h3>PETG (Polyethylene Terephthalate)</h3>
-              <p>
-                Combines strength with flexibility. Excellent chemical
-                resistance and clarity for special projects.
-              </p>
-              <div class="material-specs">
-                <span class="material-spec">Crystal Clear</span
-                ><span class="material-spec">Flexible</span
-                ><span class="material-spec">Waterproof</span>
-              </div>
-            </div>
-            <div class="material-card">
-              <div class="material-icon">🎨</div>
-              <h3>Resin (SLA/DLP)</h3>
-              <p>
-                Ultra-high detail printing for intricate designs. Perfect for
-                miniatures and jewelry-quality items.
-              </p>
-              <div class="material-specs">
-                <span class="material-spec">Ultra Detail</span
-                ><span class="material-spec">Smooth Finish</span
-                ><span class="material-spec">Precision</span>
-              </div>
+          <div class="gifting-visual">
+            <div class="gift-box">
+              <img
+                src="https://picsum.photos/seed/gift-box/500/600"
+                alt="Gift Box"
+              />
+              <div class="gift-ribbon"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Custom Orders Section -->
     <section id="custom" class="custom-orders section">
       <div class="container">
-        <div class="custom-orders-content">
+        <div class="custom-content">
           <div class="custom-visual">
-            <div class="custom-image-container">
+            <div class="custom-image">
               <img
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop"
+                src="https://picsum.photos/seed/3d-printing/600/500"
                 alt="Custom 3D Printing"
               />
-              <div class="custom-overlay">
-                <h4>Your Vision, Our Craft</h4>
-                <p>From concept to creation in just 24 hours</p>
-              </div>
             </div>
           </div>
           <div class="custom-text">
-            <span class="section-label">Custom Orders</span>
+            <span class="section-tag">Made Just For You</span>
             <h2 class="section-title">
-              Bring Your <span class="gradient-text">Ideas to Life</span>
+              Create Your <span class="highlight">Dream Product</span>
             </h2>
             <p>
-              Have a unique design in mind? We specialize in turning your
-              creative concepts into tangible reality. Whether it's a
-              personalized gift, a prototype, or a one-of-a-kind piece, we've
-              got you covered.
+              Have a unique idea? We love bringing creative visions to life!
+              Whether it's a personalized gift, a custom prototype, or a
+              one-of-a-kind piece, share your idea and we'll make it real.
             </p>
-            <div class="custom-features">
-              <div class="custom-feature">
-                <div class="custom-feature-icon">
+
+            <div class="custom-steps">
+              <div class="custom-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Share Your Idea</h4>
+                  <p>
+                    Send us your design, reference image, or just describe what
+                    you want
+                  </p>
+                </div>
+              </div>
+              <div class="custom-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>We Design & Quote</h4>
+                  <p>
+                    Our team creates a 3D model and sends you a quote within 4
+                    hours
+                  </p>
+                </div>
+              </div>
+              <div class="custom-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Production & Delivery</h4>
+                  <p>
+                    Approve the design and receive your product within 24-48
+                    hours
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="custom-ctas">
+              <a
+                href="https://wa.me/+918850410234?text=Hi! I have a custom product idea"
+                class="btn-primary"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                    viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                  </svg>
+                WhatsApp Us
+              </a>
+              <a href="#contact" class="btn-secondary">Fill Enquiry Form</a>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Cubiik?</span>
+          <h2 class="section-title">Crafted with Care, Delivered with Love</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-box">🌿</div>
+            <h3>Eco-Friendly Materials</h3>
+            <p>
+              We use PLA - a biodegradable, plant-based material that's safe for
+              you and the planet
+                  </p>
+                </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">👶</div>
+            <h3>Child Safe</h3>
+            <p>
+              Non-toxic, smooth finishes that are safe for children and pets
+            </p>
+              </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">⚡</div>
+            <h3>Lightning Fast</h3>
+            <p>
+              Most orders delivered within 24 hours in Indore, 2-3 days pan
+              India
+            </p>
+            </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">🎨</div>
+            <h3>20+ Colors</h3>
+            <p>
+              Choose from a wide range of colors to match your style and decor
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">💪</div>
+            <h3>Durable Quality</h3>
+            <p>
+              Strong, long-lasting products that maintain their beauty for years
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-box">❤️</div>
+            <h3>Made with Love</h3>
+            <p>Each product is carefully crafted and quality-checked by hand</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">
+              We'd Love to<br /><span class="highlight">Hear From You</span>
+            </h2>
+            <p>
+              Have questions about our products or want to discuss a custom
+              project? We're here to help!
+            </p>
+
+            <div class="contact-methods">
+              <a
+                href="https://wa.me/+918850410234?text=Hi! I have a query"
+                class="contact-method whatsapp-method"
+              >
+                <div class="method-icon">
                   <svg
-                    width="22"
-                    height="22"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4>WhatsApp (Fastest)</h4>
+                  <p>+91 88504 10234</p>
+                </div>
+              </a>
+
+              <a href="tel:+918850410234" class="contact-method">
+                <div class="method-icon">
+                  <svg
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                   >
                     <path
-                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                     />
-                    <polyline points="14,2 14,8 20,8" />
                   </svg>
                 </div>
-                <div class="custom-feature-text">
-                  <h4>Send Your Design</h4>
-                  <p>
-                    Upload STL, OBJ, or share your idea and we'll design it for
-                    you.
-                  </p>
+                <div>
+                  <h4>Call Us</h4>
+                  <p>+91 88504 10234</p>
                 </div>
-              </div>
-              <div class="custom-feature">
-                <div class="custom-feature-icon">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                    <path d="M2 17l10 5 10-5" />
-                    <path d="M2 12l10 5 10-5" />
-                  </svg>
-                </div>
-                <div class="custom-feature-text">
-                  <h4>Choose Material & Color</h4>
-                  <p>
-                    Select from our range of premium materials and 20+ color
-                    options.
-                  </p>
-                </div>
-              </div>
-              <div class="custom-feature">
-                <div class="custom-feature-icon">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <rect x="1" y="3" width="15" height="13" />
-                    <polygon points="16,8 20,8 23,11 23,16 16,16 16,8" />
-                    <circle cx="5.5" cy="18.5" r="2.5" />
-                    <circle cx="18.5" cy="18.5" r="2.5" />
-                  </svg>
-                </div>
-                <div class="custom-feature-text">
-                  <h4>24-Hour Delivery</h4>
-                  <p>
-                    Get your custom print delivered to your doorstep within a
-                    day.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <a href="#contact" class="btn-primary"
-              >Start Custom Order
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7" /></svg
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
+              </a>
 
-    <section id="contact" class="contact section">
-      <div class="container">
-        <div class="contact-content">
-          <div class="contact-info">
-            <span class="section-label">Get in Touch</span>
-            <h2 class="section-title">
-              Let's Build <span class="gradient-text">Something Amazing</span>
-            </h2>
-            <p>
-              Have questions about our products or want to discuss a custom
-              project? We're here to help bring your ideas to life.
-            </p>
-            <div class="contact-details">
-              <div class="contact-item">
-                <div class="contact-icon">
+              <a href="mailto:info@cubiik.in" class="contact-method">
+                <div class="method-icon">
                   <svg
-                    width="22"
-                    height="22"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -635,86 +1023,43 @@
                 </div>
                 <div>
                   <h4>Email Us</h4>
-                  <p><a href="mailto:hello@cubiik.in">info@cubiik.in</a></p>
+                  <p>info@cubiik.in</p>
                 </div>
+              </a>
               </div>
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h4>Call Us</h4>
-                  <p><a href="tel:+918850410234">+91 8850410234</a></p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12,6 12,12 16,14" />
-                  </svg>
-                </div>
-                <div>
-                  <h4>Working Hours</h4>
-                  <p>Mon - Sat: 9:00 AM - 8:00 PM</p>
-                </div>
-              </div>
+
+            <div class="business-hours">
+              <h4>🕐 Business Hours</h4>
+              <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+              <p>Sunday: 10:00 AM - 6:00 PM</p>
             </div>
           </div>
-          <div class="contact-form">
-            <h3>Send Us a Query</h3>
-            <p>
-              Fill out the form below and we'll get back to you within 2 hours.
-            </p>
-            <form
-              id="queryForm"
-              action="https://formsubmit.co/info@cubiik.in"
-              method="POST"
-            >
+
+          <div class="contact-form-container">
+            <h3>Send Us a Message</h3>
+            <p>Fill out the form and we'll get back to you within 2 hours!</p>
+
+            <form id="contactForm" class="contact-form">
               <input
                 type="hidden"
                 name="_subject"
-                value="New website query from Cubiik"
+                value="New Query from Cubiik Website"
               />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="box" />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://cubiik.in/#contact"
-              />
+
               <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Full Name</label
-                  ><input
+                  <label for="name">Your Name *</label>
+                  <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Your name"
+                    placeholder="John Doe"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label for="phone">Phone Number</label
-                  ><input
+                  <label for="phone">Phone Number *</label>
+                  <input
                     type="tel"
                     id="phone"
                     name="phone"
@@ -723,38 +1068,44 @@
                   />
                 </div>
               </div>
+
               <div class="form-group">
-                <label for="email">Email Address</label
-                ><input
+                <label for="email">Email Address</label>
+                <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="you@example.com"
-                  required
                 />
               </div>
+
               <div class="form-group">
-                <label for="inquiry">Inquiry Type</label
-                ><select id="inquiry" name="inquiry" required>
-                  <option value="">Select inquiry type</option>
-                  <option value="product">Product Inquiry</option>
+                <label for="inquiry">What are you looking for? *</label>
+                <select id="inquiry" name="inquiry" required>
+                  <option value="">Select an option</option>
+                  <option value="product">Ready-made Product</option>
                   <option value="custom">Custom Order</option>
-                  <option value="bulk">Bulk Order</option>
-                  <option value="quote">Get a Quote</option>
-                  <option value="other">Other</option>
+                  <option value="bulk">Bulk / Corporate Order</option>
+                  <option value="gift">Gift Consultation</option>
+                  <option value="other">Other Query</option>
                 </select>
               </div>
+
               <div class="form-group">
-                <label for="message">Your Message</label
-                ><textarea
+                <label for="message">Your Message *</label>
+                <textarea
                   id="message"
                   name="message"
-                  placeholder="Tell us about your project or question..."
+                  placeholder="Tell us what you're looking for..."
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="form-submit">
-                Send Message
+
+              <button type="submit" class="form-submit" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading" style="display: none"
+                  >Sending...</span
+                >
                 <svg
                   width="18"
                   height="18"
@@ -768,139 +1119,331 @@
                 </svg>
               </button>
             </form>
+
+            <div id="formSuccess" class="form-success" style="display: none">
+              <div class="success-icon">✅</div>
+              <h4>Message Sent Successfully!</h4>
+              <p>
+                We'll get back to you within 2 hours. You can also reach us
+                directly on WhatsApp for faster response.
+              </p>
+              <a href="https://wa.me/+918850410234" class="btn-secondary"
+                >Chat on WhatsApp</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
-            <a href="#" class="logo"
-              ><div class="logo-cube">◇</div>
-              cubiik</a
-            >
+            <a href="#" class="logo">
+              <svg
+                class="logo-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="4"
+                  y="4"
+                  width="32"
+                  height="32"
+                  rx="6"
+                  fill="url(#logo-gradient-footer)"
+                />
+                <path
+                  d="M20 10L28 15V25L20 30L12 25V15L20 10Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20 10V30M12 15L28 25M28 15L12 25"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-opacity="0.6"
+                />
+                <defs>
+                  <linearGradient
+                    id="logo-gradient-footer"
+                    x1="4"
+                    y1="4"
+                    x2="36"
+                    y2="36"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#d4a574" />
+                    <stop offset="1" stop-color="#c4544a" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="logo-text">cubiik</span>
+            </a>
             <p>
-              Transforming ideas into precision-crafted 3D printed products.
-              Premium quality, lightning-fast delivery.
+              Creating unique, custom 3D printed products that bring joy to your
+              home and loved ones.
             </p>
             <div class="footer-social">
-              <a href="#" aria-label="Instagram"
-                ><svg
-                  width="18"
-                  height="18"
+              <a
+                href="https://instagram.com/cubiik.in"
+                aria-label="Instagram"
+                target="_blank"
+              >
+                <svg
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
                 >
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <path
-                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                  /></svg
-              ></a>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
               <a
-                href="https://wa.me/+918850410234?text=Hey Cubiik, I have a query about your products."
+                href="https://wa.me/+918850410234?text=Hi! I'm interested in Cubiik products"
                 aria-label="WhatsApp"
-                +91
-                ><svg
-                  width="18"
-                  height="18"
+                target="_blank"
+              >
+                <svg
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path
                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </div>
           </div>
+
           <div class="footer-column">
-            <h4>Products</h4>
+            <h4>Shop</h4>
             <ul>
+              <li><a href="#products">Christmas Special</a></li>
+              <li><a href="#products">Home Decor</a></li>
               <li><a href="#products">Kids Toys</a></li>
-              <li><a href="#products">Home Décor</a></li>
-              <li><a href="#products">Sculptures</a></li>
-              <li><a href="#products">Desk Accessories</a></li>
+              <li><a href="#products">Personalized Gifts</a></li>
             </ul>
           </div>
+
           <div class="footer-column">
             <h4>Services</h4>
             <ul>
               <li><a href="#custom">Custom Orders</a></li>
-              <li><a href="#custom">Bulk Printing</a></li>
-              <li><a href="#custom">Design Services</a></li>
+              <li><a href="#custom">Bulk Orders</a></li>
+              <li><a href="#gifting">Gift Wrapping</a></li>
               <li><a href="#contact">Get a Quote</a></li>
             </ul>
           </div>
+
           <div class="footer-column">
-            <h4>Company</h4>
+            <h4>Contact</h4>
             <ul>
-              <li><a href="#materials">Our Materials</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><a href="https://wa.me/+918850410234">WhatsApp Us</a></li>
+              <li><a href="tel:+918850410234">+91 88504 10234</a></li>
+              <li><a href="mailto:info@cubiik.in">info@cubiik.in</a></li>
+              <li><span>Indore, India</span></li>
             </ul>
           </div>
         </div>
+
         <div class="footer-bottom">
-          <p>
-            © 2025 Cubiik. All rights reserved. Made with ❤️ in
-            <a href="#">India</a>
-          </p>
-          <p><a href="https://cubiik.in">cubiik.in</a></p>
+          <p>© 2025 Cubiik. All rights reserved. Made with ❤️ in India</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/+918850410234?text=Hi! I'm interested in your products"
+      class="whatsapp-float"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+      <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
     <script>
-      const themeToggle = document.getElementById("themeToggle");
-      const html = document.documentElement;
-      const savedTheme = localStorage.getItem("cubiik-theme") || "dark";
-      html.setAttribute("data-theme", savedTheme);
-      themeToggle.addEventListener("click", () => {
-        const currentTheme = html.getAttribute("data-theme");
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
-        html.setAttribute("data-theme", newTheme);
-        localStorage.setItem("cubiik-theme", newTheme);
-      });
+      // Mobile Menu Toggle
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const btn = document.querySelector(".mobile-menu-btn");
+        menu.classList.toggle("active");
+        btn.classList.toggle("active");
+      }
+
+      function closeMobileMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const btn = document.querySelector(".mobile-menu-btn");
+        menu.classList.remove("active");
+        btn.classList.remove("active");
+      }
+
+      // Smooth Scroll
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           const target = document.querySelector(this.getAttribute("href"));
-          if (target)
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-      });
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-        navbar.style.background =
-          window.scrollY > 50 ? "var(--navbar-bg-scroll)" : "var(--navbar-bg)";
-      });
-      const form = document.getElementById("queryForm");
-      if (form) {
-        form.addEventListener("submit", function () {
-          const submitBtn = this.querySelector(".form-submit");
-          if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Sending...";
+          if (target) {
+            const offset = 100;
+            const targetPosition =
+              target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: targetPosition, behavior: "smooth" });
           }
         });
-      }
-      document.querySelectorAll(".product-btn").forEach((btn) => {
+      });
+
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Product Filter
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const productCards = document.querySelectorAll(".product-card");
+
+      filterBtns.forEach((btn) => {
         btn.addEventListener("click", function () {
-          const productName =
-            this.closest(".product-card").querySelector("h3").textContent;
-          document.querySelector("#inquiry").value = "product";
-          document.querySelector("#message").value =
-            "I'm interested in the \"" +
-            productName +
-            '" product. Please provide more details.';
-          document
-            .querySelector("#contact")
-            .scrollIntoView({ behavior: "smooth" });
+          // Update active button
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          this.classList.add("active");
+
+          const filter = this.dataset.filter;
+
+          productCards.forEach((card) => {
+            if (filter === "all" || card.dataset.category === filter) {
+              card.style.display = "block";
+              setTimeout(() => (card.style.opacity = "1"), 10);
+            } else {
+              card.style.opacity = "0";
+              setTimeout(() => (card.style.display = "none"), 300);
+            }
+          });
         });
+      });
+
+      // Open WhatsApp with product info
+      function openWhatsApp(productName) {
+        const message = encodeURIComponent(
+          `Hi! I'm interested in ordering "${productName}". Can you share more details?`
+        );
+        window.open(`https://wa.me/+918850410234?text=${message}`, "_blank");
+      }
+
+      // Form Submission with Web3Forms (free service)
+      const contactForm = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const formSuccess = document.getElementById("formSuccess");
+
+      contactForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const btnText = submitBtn.querySelector(".btn-text");
+        const btnLoading = submitBtn.querySelector(".btn-loading");
+
+        btnText.style.display = "none";
+        btnLoading.style.display = "inline";
+        submitBtn.disabled = true;
+
+        const formData = new FormData(contactForm);
+        const data = {
+          access_key: "YOUR_WEB3FORMS_KEY", // Get free key from web3forms.com
+          name: formData.get("name"),
+          phone: formData.get("phone"),
+          email: formData.get("email") || "Not provided",
+          inquiry: formData.get("inquiry"),
+          message: formData.get("message"),
+          subject: "New Query from Cubiik Website",
+          from_name: "Cubiik Website",
+        };
+
+        try {
+          // Using WhatsApp as fallback since it's more reliable for Indian users
+          const whatsappMessage = `*New Inquiry from Website*%0A%0A*Name:* ${data.name}%0A*Phone:* ${data.phone}%0A*Email:* ${data.email}%0A*Looking for:* ${data.inquiry}%0A*Message:* ${data.message}`;
+
+          // Show success message
+          contactForm.style.display = "none";
+          formSuccess.style.display = "block";
+
+          // Open WhatsApp with the form data
+          setTimeout(() => {
+            window.open(
+              `https://wa.me/+918850410234?text=${whatsappMessage}`,
+              "_blank"
+            );
+          }, 1000);
+        } catch (error) {
+          alert("There was an error. Please try WhatsApp instead!");
+          btnText.style.display = "inline";
+          btnLoading.style.display = "none";
+          submitBtn.disabled = false;
+        }
+      });
+
+      // Category card click handler
+      document.querySelectorAll(".category-card").forEach((card) => {
+        card.addEventListener("click", function (e) {
+          e.preventDefault();
+          const category = this.dataset.category;
+
+          // Scroll to products
+          document
+            .querySelector("#products")
+            .scrollIntoView({ behavior: "smooth" });
+
+          // Activate filter after scroll
+          setTimeout(() => {
+            const filterBtn = document.querySelector(
+              `.filter-btn[data-filter="${category}"]`
+            );
+            if (filterBtn) {
+              filterBtn.click();
+            }
+          }, 500);
+        });
+      });
+
+      // Animate elements on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+          }
+        });
+      }, observerOptions);
+
+      document
+        .querySelectorAll(".category-card, .product-card, .feature-card")
+        .forEach((el) => {
+          observer.observe(el);
       });
     </script>
   </body>
