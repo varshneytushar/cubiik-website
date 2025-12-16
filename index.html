@@ -29,6 +29,9 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Favicon -->
+    <link rel="icon" href="fav.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -41,46 +44,25 @@
     <nav class="navbar">
       <div class="container">
         <a href="#" class="logo">
-          <svg
-            class="logo-icon"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="4"
-              y="4"
-              width="32"
-              height="32"
-              rx="6"
-              fill="url(#logo-gradient)"
-            />
-            <path
-              d="M20 10L28 15V25L20 30L12 25V15L20 10Z"
-              stroke="white"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M20 10V30M12 15L28 25M28 15L12 25"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-opacity="0.6"
-            />
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="56" height="56" rx="14" fill="url(#iso-grad)"/>
+            <!-- Isometric cube with layer lines -->
+            <path d="M28 14L42 22V38L28 46L14 38V22L28 14Z" fill="none" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
+            <!-- Inner faces -->
+            <path d="M28 14V30L14 22" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.9"/>
+            <path d="M28 30L42 22" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-opacity="0.9"/>
+            <path d="M28 30V46" stroke="white" stroke-width="2" stroke-opacity="0.6"/>
+            <!-- 3D print layer lines -->
+            <path d="M16 26L28 34L40 26" stroke="white" stroke-width="1.2" stroke-opacity="0.4"/>
+            <path d="M16 30L28 38L40 30" stroke="white" stroke-width="1.2" stroke-opacity="0.3"/>
+            <path d="M16 34L28 42L40 34" stroke="white" stroke-width="1.2" stroke-opacity="0.2"/>
             <defs>
-              <linearGradient
-                id="logo-gradient"
-                x1="4"
-                y1="4"
-                x2="36"
-                y2="36"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#d4a574" />
-                <stop offset="1" stop-color="#c4544a" />
-              </linearGradient>
+                <linearGradient id="iso-grad" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E8735F"/>
+                    <stop offset="1" stop-color="#C75B47"/>
+                </linearGradient>
             </defs>
-          </svg>
+        </svg>
           <span class="logo-text">cubiik</span>
         </a>
         <ul class="nav-links">
@@ -131,7 +113,7 @@
       <div class="hero-decoration hero-dec-2"></div>
       <div class="container">
         <div class="hero-content">
-          <!-- <span class="hero-tag">✨ Handcrafted with Love</span> -->
+          <span class="hero-tag">Custom 3D Printed • Personalized • Made in India</span>
           <h1>
             Unique Gifts That<br /><span class="highlight"
               >Tell Your Story</span
@@ -168,22 +150,12 @@
             </a>
             <a href="#custom" class="btn-secondary">Create Custom Gift</a>
           </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-image-container">
-            <img
-              src="https://picsum.photos/seed/cubiik-hero/600/700"
-              alt="Beautiful 3D Printed Gifts"
-              class="hero-img"
-            />
-            <div class="floating-card fc-1">
-              <span class="fc-emoji">⭐</span>
-              <span class="fc-text">500+ Happy Customers</span>
-            </div>
-            <div class="floating-card fc-2">
-              <span class="fc-emoji">🎄</span>
-              <span class="fc-text">Christmas Ready!</span>
-            </div>
+          <div class="hero-note" aria-label="Key highlights">
+            <span>Fast turnaround</span>
+            <span class="hero-note-dot">•</span>
+            <span>WhatsApp support</span>
+            <span class="hero-note-dot">•</span>
+            <span>Gift-ready packaging</span>
           </div>
         </div>
       </div>
@@ -280,10 +252,10 @@
           <button class="filter-btn" data-filter="christmas">
             🎄 Christmas
           </button>
-          <button class="filter-btn" data-filter="home">🏠 Home Decor</button>
+          <!-- <button class="filter-btn" data-filter="home">🏠 Home Decor</button>
           <button class="filter-btn" data-filter="toys">🧸 Toys</button>
           <button class="filter-btn" data-filter="personalized">
-            💝 Gifts
+            💝 Gifts -->
           </button>
         </div>
 
@@ -293,13 +265,13 @@
             <div class="product-badge badge-hot">🔥 Hot</div>
             <div class="product-image">
               <img
-                src="https://picsum.photos/seed/christmas-ornament/400/400"
-                alt="Christmas Tree Ornament"
+                src="product-images/christmas/christmas-ball.jpg"
+                alt="Christmas Ball"
               />
               <div class="product-overlay">
                 <button
                   class="quick-view-btn"
-                  onclick="openWhatsApp('Christmas Tree Ornament Set')"
+                  onclick="openWhatsApp('Christmas Ball')"
                 >
                   Quick Order
                 </button>
@@ -307,13 +279,12 @@
             </div>
             <div class="product-info">
               <span class="product-category">Christmas Special</span>
-              <h3>Christmas Tree Ornament Set</h3>
-              <p>Beautiful 3D printed ornaments in gold, silver & red</p>
+              <h3>Christmas Ball</h3>
+              <p>Beautiful 3D printed Christmas ball ornament</p>
               <div class="product-footer">
-                <div class="product-price">₹399 <span>Set of 6</span></div>
                 <button
                   class="product-btn"
-                  onclick="openWhatsApp('Christmas Tree Ornament Set')"
+                  onclick="openWhatsApp('Christmas Ball')"
                 >
                   <svg
                     width="20"
@@ -334,13 +305,13 @@
             <div class="product-badge badge-new">New</div>
             <div class="product-image">
               <img
-                src="https://picsum.photos/seed/snowflake-decor/400/400"
-                alt="Snowflake Decorations"
+                src="product-images/christmas/reindeer-flexi-keychain -christmas.jpg"
+                alt="Reindeer Flexi Keychain"
               />
               <div class="product-overlay">
                 <button
                   class="quick-view-btn"
-                  onclick="openWhatsApp('Snowflake Decoration Pack')"
+                  onclick="openWhatsApp('Reindeer Flexi Keychain')"
                 >
                   Quick Order
                 </button>
@@ -348,13 +319,1103 @@
             </div>
             <div class="product-info">
               <span class="product-category">Christmas Special</span>
-              <h3>Snowflake Decoration Pack</h3>
-              <p>Elegant snowflake designs for windows & trees</p>
+              <h3>Reindeer Flexi Keychain</h3>
+              <p>Adorable flexible reindeer keychain for Christmas</p>
               <div class="product-footer">
-                <div class="product-price">₹299 <span>Pack of 8</span></div>
                 <button
                   class="product-btn"
-                  onclick="openWhatsApp('Snowflake Decoration Pack')"
+                  onclick="openWhatsApp('Reindeer Flexi Keychain')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/rendier-head.webp"
+                alt="Reindeer Head"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Reindeer Head Decoration')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Reindeer Head Decoration</h3>
+              <p>Elegant reindeer head wall or table decoration</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Reindeer Head Decoration')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-bestseller">Bestseller</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/santa claus hat box christmas gift tree ornament.png"
+                alt="Santa Claus Hat Gift Box"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Santa Claus Hat Gift Box')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Santa Claus Hat Gift Box</h3>
+              <p>Festive Santa hat box for tree ornaments & gifts</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Santa Claus Hat Gift Box')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/santa claus sleigh candy holder.jpg"
+                alt="Santa Sleigh Candy Holder"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Santa Sleigh Candy Holder')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Santa Sleigh Candy Holder</h3>
+              <p>Charming sleigh to hold candies & treats</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Santa Sleigh Candy Holder')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-new">New</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/santa moon star lamp projector.png"
+                alt="Santa Moon Star Lamp Projector"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Santa Moon Star Lamp Projector')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Santa Moon Star Lamp Projector</h3>
+              <p>Magical lamp projecting festive moon & stars</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Santa Moon Star Lamp Projector')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/santa-christmas ornament-decoration.jpg"
+                alt="Santa Christmas Ornament"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Santa Christmas Ornament')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Santa Christmas Ornament</h3>
+              <p>Classic Santa ornament for your Christmas tree</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Santa Christmas Ornament')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/small christmas gift box.png"
+                alt="Small Christmas Gift Box"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Small Christmas Gift Box')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Small Christmas Gift Box</h3>
+              <p>Cute decorative gift box for small presents</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Small Christmas Gift Box')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-hot">🔥 Hot</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/snow man bowl with removable hat lid.jpg"
+                alt="Snowman Bowl with Hat Lid"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Snowman Bowl with Hat Lid')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Snowman Bowl with Hat Lid</h3>
+              <p>Adorable snowman bowl with removable hat lid</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Snowman Bowl with Hat Lid')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/snowy village.png"
+                alt="Snowy Village"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Snowy Village Decoration')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Snowy Village</h3>
+              <p>Enchanting miniature snowy village scene</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Snowy Village Decoration')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-bestseller">Bestseller</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/voronoi holiday christmas deer.webp"
+                alt="Voronoi Christmas Deer"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Voronoi Christmas Deer')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Voronoi Christmas Deer</h3>
+              <p>Stunning geometric voronoi pattern deer sculpture</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Voronoi Christmas Deer')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/winter elegant christmas reindeer  v1 male.png"
+                alt="Winter Elegant Christmas Reindeer"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Winter Elegant Christmas Reindeer')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Winter Elegant Christmas Reindeer</h3>
+              <p>Elegant reindeer sculpture for winter decor</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Winter Elegant Christmas Reindeer')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-new">New</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/3D christmas ferris wheel.PNG"
+                alt="3D Christmas Ferris Wheel"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('3D Christmas Ferris Wheel')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>3D Christmas Ferris Wheel</h3>
+              <p>Festive ferris wheel decor for your Christmas setup</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('3D Christmas Ferris Wheel')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/angel christmas tree decor.png"
+                alt="Angel Christmas Tree Decor"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Angel Christmas Tree Decor')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Angel Christmas Tree Decor</h3>
+              <p>Beautiful angel decor for your Christmas tree</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Angel Christmas Tree Decor')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/angel with heart christmas tree ornament.png"
+                alt="Angel with Heart Ornament"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Angel with Heart Christmas Tree Ornament')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Angel with Heart Ornament</h3>
+              <p>Sweet angel ornament with heart for your tree</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Angel with Heart Christmas Tree Ornament')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas candy boot.png"
+                alt="Christmas Candy Boot"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Candy Boot')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Candy Boot</h3>
+              <p>Festive boot to hold candies and treats</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Candy Boot')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-bestseller">Bestseller</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/Christmas Carousel 2.0 Thumbnail.png"
+                alt="Christmas Carousel"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Carousel')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Carousel</h3>
+              <p>Showpiece carousel decor for a festive vibe</p>
+              <div class="product-footer">
+                <button class="product-btn" onclick="openWhatsApp('Christmas Carousel')">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas cat with gift.jpg"
+                alt="Christmas Cat with Gift"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Cat with Gift')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Cat with Gift</h3>
+              <p>Cute Christmas cat figurine with a gift</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Cat with Gift')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas gnone.jpg"
+                alt="Christmas Gnome"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Gnome')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Gnome</h3>
+              <p>Adorable gnome figurine for holiday decor</p>
+              <div class="product-footer">
+                <button class="product-btn" onclick="openWhatsApp('Christmas Gnome')">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas house light.jpg"
+                alt="Christmas House Light"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas House Light')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas House Light</h3>
+              <p>Cozy house light decor for warm festive nights</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas House Light')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-new">New</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas mini bauble.JPG"
+                alt="Christmas Mini Bauble"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Mini Bauble')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Mini Bauble</h3>
+              <p>Mini bauble ornament for a cute tree look</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Mini Bauble')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas napkin holder.png"
+                alt="Christmas Napkin Holder"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Napkin Holder')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Napkin Holder</h3>
+              <p>Festive napkin holder for your holiday table</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Napkin Holder')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas ornament decoration bauble.jpg"
+                alt="Christmas Ornament Bauble"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Ornament Bauble')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Ornament Bauble</h3>
+              <p>Classic bauble ornament for festive decor</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Ornament Bauble')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas teardrop ornaments.jpg"
+                alt="Christmas Teardrop Ornaments"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Teardrop Ornaments')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Teardrop Ornaments</h3>
+              <p>Elegant teardrop ornaments for your tree</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Teardrop Ornaments')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas themed triangular gift box.jpg"
+                alt="Christmas Triangular Gift Box"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Triangular Gift Box')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Triangular Gift Box</h3>
+              <p>Unique triangular gift box for festive gifting</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Triangular Gift Box')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas tree container.webp"
+                alt="Christmas Tree Container"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Tree Container')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Tree Container</h3>
+              <p>Tree-shaped container for treats or gifting</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Christmas Tree Container')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/christmas tree.jpg"
+                alt="Christmas Tree"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Christmas Tree')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Christmas Tree</h3>
+              <p>Beautiful Christmas tree decor piece</p>
+              <div class="product-footer">
+                <button class="product-btn" onclick="openWhatsApp('Christmas Tree')">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/cozy christmas candy sack holiday catch  all bowl.png"
+                alt="Cozy Christmas Candy Sack Bowl"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Cozy Christmas Candy Sack Bowl')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Cozy Christmas Candy Sack Bowl</h3>
+              <p>Catch-all bowl perfect for candies and goodies</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Cozy Christmas Candy Sack Bowl')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img
+                src="product-images/christmas/hexagonal christmas ornaments.jpg"
+                alt="Hexagonal Christmas Ornaments"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Hexagonal Christmas Ornaments')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Hexagonal Christmas Ornaments</h3>
+              <p>Modern hexagonal ornaments for a stylish tree</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Hexagonal Christmas Ornaments')"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="christmas">
+            <div class="product-badge badge-new">New</div>
+            <div class="product-image">
+              <img
+                src="product-images/christmas/luminous gift box.png"
+                alt="Luminous Gift Box"
+              />
+              <div class="product-overlay">
+                <button
+                  class="quick-view-btn"
+                  onclick="openWhatsApp('Luminous Gift Box')"
+                >
+                  Quick Order
+                </button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Christmas Special</span>
+              <h3>Luminous Gift Box</h3>
+              <p>Glowing gift box decor for the festive season</p>
+              <div class="product-footer">
+                <button
+                  class="product-btn"
+                  onclick="openWhatsApp('Luminous Gift Box')"
                 >
                   <svg
                     width="20"
@@ -372,7 +1433,7 @@
           </div>
 
           <!-- Home Decor Products -->
-          <div class="product-card" data-category="home">
+          <!-- <div class="product-card" data-category="home">
             <div class="product-badge badge-bestseller">Bestseller</div>
             <div class="product-image">
               <img
@@ -393,7 +1454,6 @@
               <h3>Modern Geometric Vase</h3>
               <p>Stunning twisted vase for contemporary interiors</p>
               <div class="product-footer">
-                <div class="product-price">₹599 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('Modern Geometric Vase')"
@@ -433,7 +1493,6 @@
               <h3>Abstract Art Sculpture</h3>
               <p>Eye-catching centerpiece for living rooms</p>
               <div class="product-footer">
-                <div class="product-price">₹799 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('Abstract Art Sculpture')"
@@ -473,7 +1532,6 @@
               <h3>3D Wall Art Panel</h3>
               <p>Geometric patterns that add depth to walls</p>
               <div class="product-footer">
-                <div class="product-price">₹999 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('3D Wall Art Panel')"
@@ -491,10 +1549,10 @@
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Toys Products -->
-          <div class="product-card" data-category="toys">
+          <!-- <div class="product-card" data-category="toys">
             <div class="product-badge badge-bestseller">Bestseller</div>
             <div class="product-image">
               <img
@@ -515,7 +1573,6 @@
               <h3>Hot Wheels Style Car</h3>
               <p>Detailed miniature race cars for collectors</p>
               <div class="product-footer">
-                <div class="product-price">₹299 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('Hot Wheels Style Car Collection')"
@@ -556,7 +1613,6 @@
               <h3>Dinosaur Collection</h3>
               <p>Articulated figures with movable joints</p>
               <div class="product-footer">
-                <div class="product-price">₹449 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('Articulated Dinosaur Collection')"
@@ -596,7 +1652,6 @@
               <h3>Building Blocks Set</h3>
               <p>Safe, durable blocks for creative play</p>
               <div class="product-footer">
-                <div class="product-price">₹349 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('Building Blocks Set')"
@@ -614,10 +1669,10 @@
                 </button>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Personalized Gifts -->
-          <div class="product-card" data-category="personalized">
+          <!-- <div class="product-card" data-category="personalized">
             <div class="product-badge badge-hot">🔥 Popular</div>
             <div class="product-image">
               <img
@@ -638,7 +1693,6 @@
               <h3>Custom Name Plate</h3>
               <p>Personalized door signs for homes & offices</p>
               <div class="product-footer">
-                <div class="product-price">₹499 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('Custom Name Plate')"
@@ -646,11 +1700,11 @@
                   <svg
                     width="20"
                     height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </button>
@@ -678,7 +1732,6 @@
               <h3>3D Photo Frame</h3>
               <p>Unique frames to showcase precious memories</p>
               <div class="product-footer">
-                <div class="product-price">₹399 <span>onwards</span></div>
                 <button
                   class="product-btn"
                   onclick="openWhatsApp('3D Photo Frame')"
@@ -686,18 +1739,18 @@
                   <svg
                     width="20"
                     height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
             </div>
-          </div>
-              </div>
+          </div> -->
+        </div>
 
         <div class="view-all-container">
           <a
